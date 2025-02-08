@@ -36,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "83fe37f3-69fe-40d5-9fcb-0b7d324167d6"
+      }
+    },
+    "owner": "frosdev"
   }
 }
