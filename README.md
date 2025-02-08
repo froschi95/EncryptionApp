@@ -1,50 +1,74 @@
-# Welcome to your Expo app 👋
+# Secure Message Encryption App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A **React Native** application for securely encrypting and decrypting messages using a secret key. The app provides a simple interface for users to input messages, encrypt them with a custom key, and decrypt them when needed.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Encrypt Messages:** Securely encrypt text using a secret key.
+- **Decrypt Messages:** Decrypt previously encrypted text.
+- **Clipboard Support:** Copy encrypted or decrypted results to the clipboard.
+- **Tab Navigation:** Toggle between encryption and decryption modes.
+- **Responsive UI:** Designed with React Native Paper and optimized for mobile screens.
 
-   ```bash
-   npm install
-   ```
+## Technologies Used
 
-2. Start the app
+- **React Native**
+- **TypeScript**
+- **Expo** (for Clipboard API)
+- **React Native Paper** (for UI components)
 
-   ```bash
-    npx expo start
-   ```
+## Installation
 
-In the output, you'll find options to open the app in a
+### Prerequisites
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Ensure you have **Node.js** and **Expo CLI** installed:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```sh
+npm install -g expo-cli
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Clone the Repository
 
-## Learn more
+```sh
+git clone https://github.com/froschi95/EncryptionApp.git
+cd EncryptionApp
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### Install Dependencies
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```sh
+npm install
+```
 
-## Join the community
+### Run the App
 
-Join our community of developers creating universal apps.
+```sh
+npx expo start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Usage
+
+1. **Enter a message** in the input field.
+2. **Enter a secret key** to encrypt or decrypt the message.
+3. Click **Encrypt Message** to encrypt or **Decrypt Message** to decrypt.
+4. Copy the result using the clipboard button.
+5. Click **Clear All** to reset inputs.
+
+## Project Structure
+
+```
+📂 crypt-rn
+├── 📂 app
+│   ├── Index.tsx         # Main screen
+├── 📂 components
+├── 📂 services
+│   ├── cryptoService.ts  # Encryption & decryption logic
+├── package.json
+├── eas.json
+├── app.json
+├── README.md
+```
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
